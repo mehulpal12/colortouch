@@ -3,6 +3,68 @@
 
 @custom-variant dark (&:is(.dark *));
 
+.metallic-text {
+  text-transform: uppercase;
+  background: linear-gradient(
+    90deg,
+    #00ff9d,
+    #00b3ff,
+    #0077ff,
+    #00ff9d
+  );
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 6s ease infinite;
+  position: relative;
+  letter-spacing: 2px;
+}
+
+/* ✨ Add shine reflection */
+.metallic-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transform: skewX(-25deg);
+  animation: shine 3s infinite;
+}
+
+/* 🌈 Gradient motion effect */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* 💫 Shine sweep animation */
+@keyframes shine {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: 50%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+
 :root {
   /* Updated color scheme for ColorTouch brand */
   --background: oklch(0.98 0 0);

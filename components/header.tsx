@@ -41,16 +41,14 @@ export default function Header() {
             <div className="relative group">
               <button className="flex items-center gap-1 text-foreground hover:text-primary transition">
                 Services
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                </svg>
+              <svg xmlns="http://www.w3.org/2000/svg"  width="24" height="24"><path d="M12 17.414 3.293 8.707l1.414-1.414L12 14.586l7.293-7.293 1.414 1.414L12 17.414z"/></svg>
               </button>
-              <div className="absolute left-0 mt-0 w-48 bg-white border border-border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2">
+              <div className="absolute left-0  mt-0 w-48 bg-white border border-border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2">
                 {services.map((service) => (
                   <Link
                     key={service}
                     href="#"
-                    className="block px-4 py-2 text-sm text-foreground hover:bg-muted transition"
+                    className="block px-4 py-2 text-sm text-foreground  hover:bg-muted transition "
                   >
                     {service}
                   </Link>
@@ -58,7 +56,7 @@ export default function Header() {
               </div>
             </div>
 
-            <Link href="#" className="text-foreground hover:text-primary transition">
+            <Link href="#" className="text-foreground hover:text-primary transition ">
               Portfolio
             </Link>
             <Link href="#" className="text-foreground hover:text-primary transition">
@@ -68,11 +66,6 @@ export default function Header() {
               Contact
             </Link>
           </nav>
-
-          {/* CTA Button */}
-          <button className="hidden md:block px-6 py-2 bg-gradient-to-r from-orange-500 to-yellow-500 text-white rounded-full font-medium hover:shadow-lg transition">
-            Get Started
-          </button>
         </div>
       </div>
     </header>
