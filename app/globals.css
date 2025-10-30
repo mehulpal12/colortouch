@@ -63,13 +63,7 @@
   left: -100%;
   width: 30%;
   height: 100%;
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0.6),
-    rgba(255, 255, 255, 0.1),
-    transparent
-  );
-  transform: skewX(-25deg);
+
   animation: shine 3s infinite;
 }
 
@@ -98,6 +92,49 @@
     left: 100%;
   }
 }
+
+
+.service-link {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+  background: linear-gradient(90deg, #00ff9d, #00b3ff, #0077ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  overflow: hidden;
+}
+
+/* Add the shine overlay */
+.service-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+}
+
+/* Animate the shine on hover */
+.service-link:hover::before {
+  animation: shine2 1.5s ease-in-out forwards;
+}
+
+@keyframes shine2 {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
 
 
 :root {

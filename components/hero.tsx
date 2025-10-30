@@ -1,4 +1,7 @@
 "use client"
+
+import GradientBorderButton from "./GradientBorderButton"
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -30,11 +33,9 @@ export default function Hero() {
           </p>
 
           <div className="flex gap-4 mb-12 ">
-            <button className=" metallic-text2  ">
-              <span className="block cursor-pointer rounded-lg ">
-                Gradient Border Button
-              </span>
-            </button>
+           <GradientBorderButton >
+             Let's Grow Together
+            </GradientBorderButton>
 
             <button className="px-8 py-3 bg-gray-900 text-white rounded-lg font-semibold hover:bg-gray-800 transition">
               Get Free Audit

@@ -60,7 +60,7 @@ export default function Header() {
                   <Link
                     key={service}
                     href="#"
-                    className={`block mx-2 px-2 rounded py-2 text-sm  hover:metallic-text3 hover:bg-gradient-to-r from-[#00ff9d] via-[#00b3ff] to-[#0077ff] `}
+                    className={`block mx-2 px-2 rounded py-2 text-sm service-link hover:bg-gradient-to-r from-[#00ff9d] via-[#00b3ff] to-[#0077ff] `}
                   >
                     {service}
                   </Link>
