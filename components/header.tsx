@@ -60,7 +60,7 @@ export default function Header() {
                   <Link
                     key={service}
                     href="#"
-                    className={`block px-4 py-2 text-sm  transition metallic-text metallic-text-${i + 1}`}
+                    className={`block mx-2 px-2 rounded py-2 text-sm  hover:metallic-text3 hover:bg-gradient-to-r from-[#00ff9d] via-[#00b3ff] to-[#0077ff] `}
                   >
                     {service}
                   </Link>
@@ -135,7 +135,7 @@ export default function Header() {
                   <Link
                     key={service}
                     href="#"
-                    className={`block px-3 py-2 rounded text-sm transition hover:metallic-text hover:metallic-text-${i + 1}`}
+                    className={`block px-3 py-2 rounded text-sm transition hover:bg-gradient-to-r from-[#00ff9d] via-[#00b3ff] to-[#0077ff]`}
                   >
                     {service}
                   </Link>
@@ -156,46 +156,7 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Make metallic text styles global so links and other components get the gradient */}
-      <style jsx global>{`
-        /* base to ensure gradient is clipped to the text and overrides Tailwind color utilities */
-        .metallic-text,
-        .metallic-text-1,
-        .metallic-text-2,
-        .metallic-text-3,
-        .metallic-text-4,
-        .metallic-text-5,
-        .metallic-text-6,
-        .metallic-text-7 {
-          -webkit-background-clip: text;
-          background-clip: text;
-          -webkit-text-fill-color: transparent !important; /* Safari / Chrome */
-          color: transparent !important; /* override utility classes like text-foreground */
-          display: inline-block;
-          background-repeat: no-repeat;
-          background-size: 200% 100%;
-        }
 
-        .metallic-text-1 { background-image: linear-gradient(90deg, #d4af37, #ffd27f); }
-        .metallic-text-2 { background-image: linear-gradient(90deg, #c0c0c0, #f0f0f0); }
-        .metallic-text-3 { background-image: linear-gradient(90deg, #b87333, #d99a6a); }
-        .metallic-text-4 { background-image: linear-gradient(90deg, #e6c1c1, #ffd6d6); }
-        .metallic-text-5 { background-image: linear-gradient(90deg, #c6e2ff, #8fbce6); }
-        .metallic-text-6 { background-image: linear-gradient(90deg, #d1ffd6, #8fe59a); }
-        .metallic-text-7 { background-image: linear-gradient(90deg, #f5e6ff, #d6b3ff); }
-
-        /* subtle hover state while keeping the gradient visible */
-        .metallic-text:hover,
-        .metallic-text-1:hover,
-        .metallic-text-2:hover,
-        .metallic-text-3:hover,
-        .metallic-text-4:hover,
-        .metallic-text-5:hover,
-        .metallic-text-6:hover,
-        .metallic-text-7:hover {
-          filter: brightness(0.98);
-        }
-      `}</style>
     </header>
   )
 }

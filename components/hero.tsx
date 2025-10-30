@@ -30,9 +30,12 @@ export default function Hero() {
           </p>
 
           <div className="flex gap-4 mb-12 ">
-            <button className="px-8 py-3   font-bold bg-gradient-to-r from-[#00ff9d] via-[#00b3ff] to-[#0077ff] text-transparent bg-clip-text rounded-lg font-semibold hover:bg-[linear-gradient(90deg,#00ff9d,#00b3ff,#0077ff,#00ff9d)] transition">
-              Let's Grow Together
+            <button className=" metallic-text2  ">
+              <span className="block cursor-pointer rounded-lg ">
+                Gradient Border Button
+              </span>
             </button>
+
             <button className="px-8 py-3 bg-gray-900 text-white rounded-lg font-semibold hover:bg-gray-800 transition">
               Get Free Audit
             </button>
