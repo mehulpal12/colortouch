@@ -45,7 +45,7 @@ export default function Testimonials() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Client{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
+            <span className="text-transparent metallic-text bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
               Testimonials
             </span>
           </h2>

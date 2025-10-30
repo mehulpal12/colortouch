@@ -30,7 +30,7 @@ export default function About() {
             <div className="space-y-4">
               {["Creative Excellence", "Data-Driven Results", "Client Success Focus"].map((item, index) => (
                 <div key={index} className="flex items-center gap-3">
-                  <div className="w-3 h-3 rounded-full bg-gradient-to-r from-purple-500 to-blue-500"></div>
+                  <div className="w-6 h-6 rounded-full shine-btn bg-gradient-to-r from-[#00ff9d] via-[#00b3ff] to-[#0077ff]"></div>
                   <span className="text-foreground font-medium">{item}</span>
                 </div>
               ))}

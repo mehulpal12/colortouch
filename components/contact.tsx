@@ -35,8 +35,8 @@ export default function Contact() {
   }
 
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="pb-10 bg-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -58,7 +58,7 @@ export default function Contact() {
             <div className="space-y-6">
               {/* Visit Our Office */}
               <div className="flex gap-4">
-                <div className="w-12 h-12 bg-gradient-to-r from-[#00ff9d] via-[#00b3ff] to-[#0077ff] rounded-full flex items-center justify-center flex-shrink-0 text-xl">
+                <div className="w-12 h-12 shine-btn bg-gradient-to-r from-[#00ff9d] via-[#00b3ff] to-[#0077ff] rounded-full flex items-center justify-center flex-shrink-0 text-xl">
                   📍
                 </div>
                 <div>
@@ -69,7 +69,7 @@ export default function Contact() {
 
               {/* Call Us */}
               <div className="flex gap-4">
-                <div className="w-12 h-12 bg-gradient-to-r from-[#00ff9d] via-[#00b3ff] to-[#0077ff] rounded-full flex items-center justify-center flex-shrink-0 text-xl">
+                <div className="w-12 h-12 shine-btn bg-gradient-to-r from-[#00ff9d] via-[#00b3ff] to-[#0077ff] rounded-full flex items-center justify-center flex-shrink-0 text-xl">
                   📞
                 </div>
                 <div>
@@ -80,7 +80,7 @@ export default function Contact() {
 
               {/* Email Us */}
               <div className="flex gap-4">
-                <div className="w-12 h-12 bg-gradient-to-r from-[#00ff9d] via-[#00b3ff] to-[#0077ff] rounded-full flex items-center justify-center flex-shrink-0 text-xl">
+                <div className="w-12 h-12 shine-btn bg-gradient-to-r from-[#00ff9d] via-[#00b3ff] to-[#0077ff] rounded-full flex items-center justify-center flex-shrink-0 text-xl">
                   ✉️
                 </div>
                 <div>
@@ -97,7 +97,7 @@ export default function Contact() {
               {/* First Name and Last Name */}
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">First Name</label>
+                  <label className="block text-sm font-medium text-foreground ">First Name</label>
                   <input
                     type="text"
                     name="firstName"
@@ -108,7 +108,7 @@ export default function Contact() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">Last Name</label>
+                  <label className="block text-sm font-medium text-foreground ">Last Name</label>
                   <input
                     type="text"
                     name="lastName"
@@ -122,7 +122,7 @@ export default function Contact() {
 
               {/* Email Address */}
               <div>
-                <label className="block text-sm font-medium text-foreground mb-2">Email Address</label>
+                <label className="block text-sm font-medium text-foreground ">Email Address</label>
                 <input
                   type="email"
                   name="email"
@@ -135,7 +135,7 @@ export default function Contact() {
 
               {/* Company */}
               <div>
-                <label className="block text-sm font-medium text-foreground mb-2">Company</label>
+                <label className="block text-sm font-medium text-foreground ">Company</label>
                 <input
                   type="text"
                   name="company"
@@ -148,7 +148,7 @@ export default function Contact() {
 
               {/* Message */}
               <div>
-                <label className="block text-sm font-medium text-foreground mb-2">Message</label>
+                <label className="block text-sm font-medium text-foreground ">Message</label>
                 <textarea
                   name="message"
                   value={formData.message}
@@ -162,7 +162,7 @@ export default function Contact() {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full py-3 px-6 bg-gradient-to-r from-[#00ff9d] via-[#00b3ff] to-[#0077ff] text-white font-bold rounded-lg hover:shadow-lg transition-shadow"
+                className="w-full py-3 px-6 shine-btn bg-gradient-to-r from-[#00ff9d] via-[#00b3ff] to-[#0077ff] meta text-white font-bold rounded-lg hover:shadow-lg transition-shadow"
               >
                 Send Message
               </button>

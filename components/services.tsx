@@ -39,7 +39,7 @@ const servicesList = [
 
 export default function Services() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gradient-to-br from-white to-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
@@ -58,9 +58,9 @@ export default function Services() {
           {servicesList.map((service, index) => (
             <div
               key={index}
-              className="p-8 bg-white border border-gray-100 rounded-xl hover:shadow-lg transition-shadow"
+              className="p-8 bg-white  rounded-xl h"
             >
-              <div className="w-16 h-16 bg-gradient-to-r from-[#00ff9d] via-[#00b3ff] to-[#0077ff] rounded-2xl flex items-center justify-center mb-6 text-2xl">
+              <div className="w-16 h-16 shine-btn bg-gradient-to-r from-[#00ff9d] via-[#00b3ff] to-[#0077ff]  rounded-2xl flex items-center justify-center mb-6 text-2xl">
                 {service.icon}
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">{service.title}</h3>
