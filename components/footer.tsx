@@ -6,8 +6,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-bold mb-4">
-              <span className="text-orange-500">Color</span>
-              <span className="text-yellow-500">Touch</span>
+              <span className="metallic-text">ColorTouch</span>
             </h3>
             <p className="text-gray-400">Transforming brands through creative digital marketing solutions.</p>
           </div>

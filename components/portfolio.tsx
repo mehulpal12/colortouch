@@ -45,7 +45,7 @@ export default function Portfolio() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Our{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
+            <span className="text-transparent metallic-text">
               Portfolio
             </span>
           </h2>

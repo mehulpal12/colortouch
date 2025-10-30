@@ -44,7 +44,7 @@ export default function Services() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Our <span className="text-orange-500">Services</span>
+            Our <span className="metallic-text">Services</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-yellow-500 mx-auto mb-6"></div>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
@@ -60,7 +60,7 @@ export default function Services() {
               key={index}
               className="p-8 bg-white border border-gray-100 rounded-xl hover:shadow-lg transition-shadow"
             >
-              <div className="w-16 h-16 bg-gradient-to-br from-orange-400 to-yellow-400 rounded-2xl flex items-center justify-center mb-6 text-2xl">
+              <div className="w-16 h-16 bg-gradient-to-r from-[#00ff9d] via-[#00b3ff] to-[#0077ff] rounded-2xl flex items-center justify-center mb-6 text-2xl">
                 {service.icon}
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">{service.title}</h3>
